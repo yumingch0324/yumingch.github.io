@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Yuming Chang — About</title>
+  <title>Yuming Chang — Autonomous Driving Engineering & Research</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Autonomous Driving engineering and research — LLM/VLM/VLA, World Models, Risk-Aware Planning." />
+  <meta name="description" content="Autonomous Driving engineering and research — Generative AI for AVs, world models, VLA, risk-aware planning, and simulation.">
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og-cover.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,73 +14,63 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-  <div class="layout">
-    <aside class="left-rail">
-      <a class="logo" href="index.html" aria-label="Home">
-        <span class="logo-dot" aria-hidden="true"></span>
-        <span class="logo-text">YC</span>
-      </a>
-      <h1 class="name">Yuming Chang</h1>
-      <p class="role">Autonomous Driving · Generative AI</p>
-      <ul class="social">
-        <li><a href="mailto:yuming.chang@example.com">Email</a></li>
-        <li><a href="https://github.com/yumingch">GitHub</a></li>
-        <li><a href="#" aria-disabled="true">Scholar</a></li>
-        <li><a href="assets/Yuming_Chang_CV.pdf" download>CV</a></li>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      <span class="logo-text">YC</span>
+    </a>
+    <nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+      <ul id="nav" class="nav">
+        <li><a data-nav="about" href="index.html#about">About</a></li>
+        <li><a data-nav="research" href="research.html">Research</a></li>
+        <li><a data-nav="projects" href="projects.html">Projects</a></li>
+        <li><a data-nav="publications" href="publications.html">Publications</a></li>
+        <li><a data-nav="contact" href="contact.html">Contact</a></li>
       </ul>
-      <nav class="side-nav">
-        <a data-nav="about" href="index.html">About</a>
-        <a data-nav="research" href="research.html">Research</a>
-        <a data-nav="projects" href="projects.html">Projects</a>
-        <a data-nav="publications" href="publications.html">Publications</a>
-        <a data-nav="contact" href="contact.html">Contact</a>
-      </nav>
-      <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-    </aside>
-    <main class="content">
-      <section class="hero-card">
-        <h2>About</h2>
-        <p>
-          I’m a CSE‑CEE Ph.D. student at Georgia Tech working on reliable, efficient end‑to‑end autonomous driving.
-          My work blends <strong>world models</strong> with <strong>VLA policies</strong>, and adds <strong>risk‑aware planning</strong>
-          via conformal prediction & CVaR to handle corner cases.
-        </p>
-        <div class="chips">
-          <span class="chip">LLM/VLM/VLA</span>
-          <span class="chip">World Models</span>
-          <span class="chip">CARLA × SUMO</span>
-          <span class="chip">Uncertainty</span>
-        </div>
+    </nav>
+    <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </header>
+  <main>
+    <section class="hero hero--flat">
+      <div class="hero__content">
+        <h1>Yuming Chang</h1>
+        <p class="tagline">Autonomous Driving Engineering & Research · LLM/VLM/VLA · World Models · Risk-Aware Planning</p>
         <div class="cta">
           <a class="btn btn--solid" href="assets/Yuming_Chang_CV.pdf" download>Download CV</a>
           <a class="btn btn--ghost" href="contact.html">Get in touch</a>
         </div>
-      </section>
+      </div>
+      <div class="hero__badges">
+        <span class="chip">Generative AI</span>
+        <span class="chip">E2E Driving</span>
+        <span class="chip">CARLA / SUMO</span>
+        <span class="chip">Uncertainty</span>
+      </div>
+    </section>
 
-      <section class="section">
-        <h3>News</h3>
-        <ul class="news" id="news"></ul>
-      </section>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I am a CSE-CEE Ph.D. student at Georgia Tech, building practical, reliable end-to-end autonomous driving
+        stacks by combining <strong>world models</strong> with <strong>VLA policies</strong>, and quantifying uncertainty
+        for <strong>risk-aware planning</strong>.
+      </p>
+      <p class="note">Palette uses separate, solid colors — Gold and Blue — and a flat UI. This site is <em>not</em> affiliated with or endorsed by any company.</p>
+      <div class="cta"><a class="btn btn--ghost" href="research.html">Explore my research →</a></div>
+    </section>
 
-      <section class="section">
-        <h3>Highlights</h3>
-        <div class="grid2">
-          <div class="card">
-            <h4>World‑Model‑Aided KD</h4>
-            <p>Distilling look‑ahead to tiny VLA policies with rollout agreement losses.</p>
-            <a class="link" href="projects.html#wmkd">See project →</a>
-          </div>
-          <div class="card">
-            <h4>Slackness‑Aware Planning</h4>
-            <p>Quantifies lawful slackness for merges/stops/yields with conformal envelopes.</p>
-            <a class="link" href="projects.html#slackness">See project →</a>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
+    <section id="education" class="section section--alt">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li><span class="t-year">2024—Now</span> Ph.D., Computational Science & Engineering (CSE-CEE), <strong>Georgia Tech</strong>.</li>
+        <li><span class="t-year">2022—2024</span> Graduate research in autonomous driving & transportation systems, <strong>Georgia Tech</strong>.</li>
+        <li><span class="t-year">—</span> (Add earlier degrees here.)</li>
+      </ol>
+    </section>
+  </main>
   <footer class="footer">
-    <p>© <span id="year"></span> Yuming Chang. Palette is generic teal–blue; no third‑party logos; not affiliated with any company.</p>
+    <p>© <span id="year"></span> Yuming Chang.</p>
   </footer>
   <script src="script.js"></script>
 </body>

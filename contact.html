@@ -4,7 +4,6 @@
   <title>Contact — Yuming Chang</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Autonomous Driving engineering and research — LLM/VLM/VLA, World Models, Risk-Aware Planning." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og-cover.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,51 +12,37 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
-<body>
-  <div class="layout">
-    <aside class="left-rail">
-      <a class="logo" href="index.html" aria-label="Home">
-        <span class="logo-dot" aria-hidden="true"></span>
-        <span class="logo-text">YC</span>
-      </a>
-      <h1 class="name">Yuming Chang</h1>
-      <p class="role">Autonomous Driving · Generative AI</p>
-      <ul class="social">
-        <li><a href="mailto:yuming.chang@example.com">Email</a></li>
-        <li><a href="https://github.com/yumingch">GitHub</a></li>
-        <li><a href="#" aria-disabled="true">Scholar</a></li>
-        <li><a href="assets/Yuming_Chang_CV.pdf" download>CV</a></li>
+<body data-page="contact">
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      <span class="logo-text">YC</span>
+    </a>
+    <nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+      <ul id="nav" class="nav">
+        <li><a data-nav="about" href="index.html#about">About</a></li>
+        <li><a data-nav="research" href="research.html">Research</a></li>
+        <li><a data-nav="projects" href="projects.html">Projects</a></li>
+        <li><a data-nav="publications" href="publications.html">Publications</a></li>
+        <li><a data-nav="contact" href="contact.html">Contact</a></li>
       </ul>
-      <nav class="side-nav">
-        <a data-nav="about" href="index.html">About</a>
-        <a data-nav="research" href="research.html">Research</a>
-        <a data-nav="projects" href="projects.html">Projects</a>
-        <a data-nav="publications" href="publications.html">Publications</a>
-        <a data-nav="contact" href="contact.html">Contact</a>
-      </nav>
-      <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-    </aside>
-    <main class="content">
-      <section class="section">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:yuming.chang@example.com">yuming.chang@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/yumingch">github.com/yumingch</a></p>
-        <p>LinkedIn: <a href="#" aria-disabled="true">linkedin.com/in/yuming-chang</a></p>
-      </section>
-
-      <section class="section section--alt">
-        <h2>Short CV</h2>
-        <ol class="timeline">
-          <li><span class="t-year">2024—Now</span> Ph.D., Computational Science & Engineering (CSE‑CEE), Georgia Tech</li>
-          <li><span class="t-year">2022—2024</span> Research on AVs with LLM/VLM/VLA, world models, and risk‑aware planning</li>
-          <li><span class="t-year">…</span> See full CV for details</li>
-        </ol>
-      </section>
-    </main>
+    </nav>
+    <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </header>
+  <main>
+    
+<section class="section">
+  <h1 class="page-title">Contact</h1>
+  <div class="contact">
+    <p>Email: <a href="mailto:yuming.chang@example.com">yuming.chang@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/yumingch">yumingch</a></p>
+    <p>LinkedIn: <a href="#" aria-disabled="true">linkedin.com/in/yuming-chang</a></p>
   </div>
-  <footer class="footer">
-    <p>© <span id="year"></span> Yuming Chang. Palette is generic teal–blue; no third‑party logos; not affiliated with any company.</p>
-  </footer>
+</section>
+
+  </main>
+  <footer class="footer"><p>© <span id="year"></span> Yuming Chang.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>

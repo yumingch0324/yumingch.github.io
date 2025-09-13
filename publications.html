@@ -4,7 +4,6 @@
   <title>Publications — Yuming Chang</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Autonomous Driving engineering and research — LLM/VLM/VLA, World Models, Risk-Aware Planning." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og-cover.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,48 +12,36 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
-<body>
-  <div class="layout">
-    <aside class="left-rail">
-      <a class="logo" href="index.html" aria-label="Home">
-        <span class="logo-dot" aria-hidden="true"></span>
-        <span class="logo-text">YC</span>
-      </a>
-      <h1 class="name">Yuming Chang</h1>
-      <p class="role">Autonomous Driving · Generative AI</p>
-      <ul class="social">
-        <li><a href="mailto:yuming.chang@example.com">Email</a></li>
-        <li><a href="https://github.com/yumingch">GitHub</a></li>
-        <li><a href="#" aria-disabled="true">Scholar</a></li>
-        <li><a href="assets/Yuming_Chang_CV.pdf" download>CV</a></li>
+<body data-page="publications">
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      <span class="logo-text">YC</span>
+    </a>
+    <nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+      <ul id="nav" class="nav">
+        <li><a data-nav="about" href="index.html#about">About</a></li>
+        <li><a data-nav="research" href="research.html">Research</a></li>
+        <li><a data-nav="projects" href="projects.html">Projects</a></li>
+        <li><a data-nav="publications" href="publications.html">Publications</a></li>
+        <li><a data-nav="contact" href="contact.html">Contact</a></li>
       </ul>
-      <nav class="side-nav">
-        <a data-nav="about" href="index.html">About</a>
-        <a data-nav="research" href="research.html">Research</a>
-        <a data-nav="projects" href="projects.html">Projects</a>
-        <a data-nav="publications" href="publications.html">Publications</a>
-        <a data-nav="contact" href="contact.html">Contact</a>
-      </nav>
-      <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-    </aside>
-    <main class="content">
-      <section class="section">
-        <h2>Publications</h2>
-        <div class="pub-controls">
-          <input id="pub-search" placeholder="Filter by title/keyword…" aria-label="Filter publications">
-          <select id="pub-year">
-            <option value="">All years</option>
-          </select>
-        </div>
-        <ol id="pub-list" class="pubs"></ol>
-      </section>
-    </main>
-  </div>
-  <footer class="footer">
-    <p>© <span id="year"></span> Yuming Chang. Palette is generic teal–blue; no third‑party logos; not affiliated with any company.</p>
-  </footer>
-  <script src="script.js"></script>
-  <script>window.PUBS_JSON = 'data/publications.json';</script>
+    </nav>
+    <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </header>
+  <main>
+    
+<section class="section section--alt">
+  <h1 class="page-title">Publications</h1>
+  <ol class="pubs">
+    <li><strong>Chang, Y.</strong>, et al. <em>Distilling Look-Ahead: World-Model-Aided KD for Driving</em>, 2025. <a href="#" aria-disabled="true">preprint</a></li>
+    <li><strong>Chang, Y.</strong>, et al. <em>Slackness-Aware AV Planning with Conformal Bounds</em>, 2024. <a href="#" aria-disabled="true">arXiv</a></li>
+  </ol>
+</section>
+
+  </main>
+  <footer class="footer"><p>© <span id="year"></span> Yuming Chang.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
