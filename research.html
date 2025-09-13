@@ -4,7 +4,7 @@
   <title>Research — Yuming Chang</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Research areas: Generative AI for AVs, world models, risk-aware planning, simulation tooling.">
+  <meta name="description" content="Autonomous Driving engineering and research — LLM/VLM/VLA, World Models, Risk-Aware Planning." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og-cover.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,50 +13,66 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
-<body data-page="research">
-  <header class="site-header">
-    <a class="logo" href="index.html" aria-label="Home">
-      <span class="logo-dot" aria-hidden="true"></span>
-      <span class="logo-text">YC</span>
-    </a>
-    <nav>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
-      <ul id="nav" class="nav">
-        <li><a data-nav="about" href="index.html#about">About</a></li>
-        <li><a data-nav="research" href="research.html">Research</a></li>
-        <li><a data-nav="projects" href="projects.html">Projects</a></li>
-        <li><a data-nav="publications" href="publications.html">Publications</a></li>
-        <li><a data-nav="contact" href="contact.html">Contact</a></li>
+<body>
+  <div class="layout">
+    <aside class="left-rail">
+      <a class="logo" href="index.html" aria-label="Home">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <span class="logo-text">YC</span>
+      </a>
+      <h1 class="name">Yuming Chang</h1>
+      <p class="role">Autonomous Driving · Generative AI</p>
+      <ul class="social">
+        <li><a href="mailto:yuming.chang@example.com">Email</a></li>
+        <li><a href="https://github.com/yumingch">GitHub</a></li>
+        <li><a href="#" aria-disabled="true">Scholar</a></li>
+        <li><a href="assets/Yuming_Chang_CV.pdf" download>CV</a></li>
       </ul>
-    </nav>
-    <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-  </header>
-  <main>
-    <section class="section">
-      <h1 class="page-title">Research Areas</h1>
-      <div class="cards">
-        <article class="card">
-          <h3>Generative AI for AVs</h3>
-          <p>LLM/VLM/VLA agents for interpretable reasoning, data-efficient behavior cloning, and scenario generation.</p>
-        </article>
-        <article class="card">
-          <h3>World Models</h3>
-          <p>Lightweight, rollout-aware prediction in latent BEV to anticipate interactions and enable proactive planning.</p>
-        </article>
-        <article class="card">
-          <h3>Risk-Aware Planning</h3>
-          <p>Conformal prediction and CVaR objectives to handle corner cases and quantify uncertainty at inference time.</p>
-        </article>
-        <article class="card">
-          <h3>Simulation & Tooling</h3>
-          <p>CARLA×SUMO co-simulation, ROS/ROS2 bridges, and evaluation suites for human-like “slackness.”</p>
-        </article>
-      </div>
-      <div class="cta"><a class="btn btn--solid" href="projects.html">See related projects</a></div>
-    </section>
-  </main>
+      <nav class="side-nav">
+        <a data-nav="about" href="index.html">About</a>
+        <a data-nav="research" href="research.html">Research</a>
+        <a data-nav="projects" href="projects.html">Projects</a>
+        <a data-nav="publications" href="publications.html">Publications</a>
+        <a data-nav="contact" href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+    </aside>
+    <main class="content">
+      <section class="section">
+        <h2>Research Areas</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Generative AI for AVs</h3>
+            <p>VLA agents for interpretable reasoning, data‑efficient behavior cloning, and scenario generation.</p>
+          </article>
+          <article class="card">
+            <h3>World Models</h3>
+            <p>Short‑horizon latent rollout (BEV) to anticipate interactions & enable proactive planning.</p>
+          </article>
+          <article class="card">
+            <h3>Risk‑Aware Planning</h3>
+            <p>Conformal prediction & CVaR to quantify uncertainty and mitigate corner cases.</p>
+          </article>
+          <article class="card">
+            <h3>Sim & Tooling</h3>
+            <p>CARLA×SUMO co‑simulation, ROS2 bridges, and evaluation for human‑like “slackness”.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Open Problems I’m exploring</h2>
+        <ul class="bullets">
+          <li>Look‑ahead distillation that preserves foresight without heavy rollouts.</li>
+          <li>Unified slackness modeling across stops, merges, yields, and traffic lights.</li>
+          <li>Text‑to‑scenario generation with automatic difficulty calibration.</li>
+          <li>Risk budgets and online calibration for VLA planners.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
   <footer class="footer">
-    <p>© <span id="year"></span> Yuming Chang.</p>
+    <p>© <span id="year"></span> Yuming Chang. Palette is generic teal–blue; no third‑party logos; not affiliated with any company.</p>
   </footer>
   <script src="script.js"></script>
 </body>

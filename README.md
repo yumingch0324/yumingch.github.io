@@ -1,11 +1,11 @@
-# Multi-page Personal Website — Autonomous Driving
-- Pages: `index.html` (home), `research.html`, `projects.html`, `publications.html`, `contact.html`.
-- Put all files at the repo root (e.g., `yumingch0324.github.io`).
+# Refined Personal Website (Multi‑page)
+Left sticky profile rail + right content, inspired by clean academic pages. Pages: About, Research, Projects, Publications, Contact.
 
 ## Deploy
-Settings ▸ Pages ▸ Deploy from a branch → Branch: `main` → Folder: `/ (root)`.
+Copy all files to your GitHub Pages repo (e.g., `yumingch0324.github.io`) and push. Pages: `/`, `/research.html`, `/projects.html`, `/publications.html`, `/contact.html`.
 
 ## Customize
-- Update text in each HTML file.
-- Replace `assets/Yuming_Chang_CV.pdf` with your real CV.
-- Colors defined in `styles.css` (generic teal–blue, not tied to any brand).
+- Edit each HTML page for text.
+- Replace `assets/Yuming_Chang_CV.pdf`.
+- Add news to `data/news.json`.
+- Add publications to `data/publications.json` (schema: see file).
