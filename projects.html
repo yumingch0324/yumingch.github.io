@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects — Yuming Chang</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Selected projects in end-to-end autonomous driving, world models, and VLA planning.">
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-cover.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="projects">
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      <span class="logo-text">YC</span>
+    </a>
+    <nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+      <ul id="nav" class="nav">
+        <li><a data-nav="about" href="index.html#about">About</a></li>
+        <li><a data-nav="research" href="research.html">Research</a></li>
+        <li><a data-nav="projects" href="projects.html">Projects</a></li>
+        <li><a data-nav="publications" href="publications.html">Publications</a></li>
+        <li><a data-nav="contact" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </header>
+  <main>
+    <section class="section">
+      <h1 class="page-title">Selected Projects</h1>
+      <div class="projects">
+        <article class="project">
+          <img src="assets/thumb-placeholder.svg" alt="Project thumbnail placeholder" />
+          <div>
+            <h3>World-Model + VLA for Proactive Driving</h3>
+            <p>Short-horizon latent rollout fused with text-guided VLA to reduce myopic interventions and improve comfort.</p>
+            <a class="link" href="#" aria-disabled="true">Code (soon)</a>
+          </div>
+        </article>
+        <article class="project">
+          <img src="assets/thumb-placeholder.svg" alt="Project thumbnail placeholder" />
+          <div>
+            <h3>Human-Like Slackness via Conformal Calibration</h3>
+            <p>Quantifies lawful slackness for merges/stops/yields with uncertainty-aware safety envelopes.</p>
+            <a class="link" href="#" aria-disabled="true">Paper (under review)</a>
+          </div>
+        </article>
+        <article class="project">
+          <img src="assets/thumb-placeholder.svg" alt="Project thumbnail placeholder" />
+          <div>
+            <h3>LLM-Guided Scenario Generation in CARLA</h3>
+            <p>Text-to-scenario pipeline for rare events (cut-ins, occlusions, near-misses) with automatic difficulty scaling.</p>
+            <a class="link" href="#" aria-disabled="true">Demo (soon)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> Yuming Chang.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
