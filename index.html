@@ -4,7 +4,6 @@
   <title>Yuming Chang — Autonomous Driving Engineering & Research</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Autonomous Driving engineering and research — Generative AI for AVs, world models, VLA, risk-aware planning, and simulation.">
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og-cover.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Autonomous Driving engineering and research — Generative AI for AVs, world models, VLA, risk-aware planning, and simulation.">
 </head>
 <body>
   <header class="site-header">
@@ -26,19 +26,24 @@
         <li><a data-nav="research" href="research.html">Research</a></li>
         <li><a data-nav="projects" href="projects.html">Projects</a></li>
         <li><a data-nav="publications" href="publications.html">Publications</a></li>
-        <li><a data-nav="contact" href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <ul class="social-icons" aria-label="Social links">
+      <li><a class="icon" href="https://www.linkedin.com/in/your-link" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="" /></a></li>
+      <li><a class="icon" href="mailto:yuming.chang@example.com" aria-label="Email"><img src="assets/icon-email.svg" alt="" /></a></li>
+      <li><a class="icon" href="https://github.com/yumingch" aria-label="GitHub"><img src="assets/icon-github.svg" alt="" /></a></li>
+      <li><a class="icon" href="https://scholar.google.com/" aria-label="Google Scholar"><img src="assets/icon-scholar.svg" alt="" /></a></li>
+    </ul>
     <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
   </header>
   <main>
-    <section class="hero hero--flat">
+    <section class="hero">
       <div class="hero__content">
         <h1>Yuming Chang</h1>
         <p class="tagline">Autonomous Driving Engineering & Research · LLM/VLM/VLA · World Models · Risk-Aware Planning</p>
         <div class="cta">
           <a class="btn btn--solid" href="assets/Yuming_Chang_CV.pdf" download>Download CV</a>
-          <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+          <a class="btn btn--ghost" href="mailto:yuming.chang@example.com">Email me</a>
         </div>
       </div>
       <div class="hero__badges">
@@ -56,16 +61,25 @@
         stacks by combining <strong>world models</strong> with <strong>VLA policies</strong>, and quantifying uncertainty
         for <strong>risk-aware planning</strong>.
       </p>
-      <p class="note">Palette uses separate, solid colors — Gold and Blue — and a flat UI. This site is <em>not</em> affiliated with or endorsed by any company.</p>
+      <p class="note">This site uses flat colors (Gold & Blue) with no gradients. Not affiliated with any company.</p>
       <div class="cta"><a class="btn btn--ghost" href="research.html">Explore my research →</a></div>
     </section>
 
     <section id="education" class="section section--alt">
       <h2>Education</h2>
       <ol class="timeline">
-        <li><span class="t-year">2024—Now</span> Ph.D., Computational Science & Engineering (CSE-CEE), <strong>Georgia Tech</strong>.</li>
-        <li><span class="t-year">2022—2024</span> Graduate research in autonomous driving & transportation systems, <strong>Georgia Tech</strong>.</li>
-        <li><span class="t-year">—</span> (Add earlier degrees here.)</li>
+        <li class="edu-item">
+          <img class="edu-logo" src="assets/logos/logo-gt.svg" alt="Georgia Tech logo">
+          <div class="edu-text"><span class="t-year">2024—Now</span> Ph.D., Computational Science & Engineering (CSE-CEE), <strong>Georgia Tech</strong>.</div>
+        </li>
+        <li class="edu-item">
+          <img class="edu-logo" src="assets/logos/logo-gt.svg" alt="Georgia Tech logo">
+          <div class="edu-text"><span class="t-year">2022—2024</span> Graduate research in autonomous driving & transportation systems, <strong>Georgia Tech</strong>.</div>
+        </li>
+        <li class="edu-item">
+          <img class="edu-logo" src="assets/logos/logo-uni.svg" alt="University logo">
+          <div class="edu-text"><span class="t-year">—</span> (Add earlier degrees here.)</div>
+        </li>
       </ol>
     </section>
   </main>
